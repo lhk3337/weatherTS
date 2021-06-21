@@ -3,9 +3,9 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
   body {
-   
+ 
     font-family: 'Montserrat', sans-serif;
-    padding: 0 !important;
+
   }
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,17 +27,19 @@ const GlobalStyle = createGlobalStyle`
     vertical-align: baseline;
     box-sizing: border-box;
   }
-  html, body, #root, .Section__container___3YYTG {
-    height: 100%;
-  }
+
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     line-height: 1;
-    background-color: #FFF5E7;
+    background: linear-gradient(#fff5e7, white);
   }
   ol, ul {
     list-style: none;
